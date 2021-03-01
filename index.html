@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UBU-TEMP</title>
+  <link rel="stylesheet" href="coco.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <style>
+    *{
+      font-family: 'RocknRoll One', sans-serif;
+    }
+  .container {
+    margin-top: 200px;
+    margin-left: 570px
+  }
+  .container1 {
+    margin-top: 0px;
+    margin-left: 730px
+  }
+  footer{
+    text-align: center;
+    margin-top:11rem;
+  }
+  body{
+    background-color: rgb(235, 175, 175);
+  }
+  .container2 {
+    margin-top: 5px;
+    margin-left: 0px
+  }
+  .Main-topic{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .root{
+    margin-top:1rem;
+  }
+  h1{
+    font-size: 24px;
+  }
+  </style>
+  <script src="jed.js"></script>
+</head>
+
+
+
+<body >
+  <nav class="navbar is-danger
+ " role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          UBU-TEMP
+        </a>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        Taweechai : {online}
+      </div>
+      <div class="navbar-item">
+       AA : {offline}
+      </div>
+      <div class="navbar-item">
+       Kanokwan1 : {online}
+      </div>
+      <div class="navbar-item">
+        Kanokwan2 : {offline}
+      </div>
+    </div>
+  
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  </div>
+
+    <div class="container">
+      <div class="form-group row">
+      <div class="col-sm-5">
+        <h1 class="Main-topic">คาดการณ์</h1>
+        <select class="form-control form-control-lg">
+          <option>หอพัก กนกวรรณ</option>
+          <option>หอพัก AA</option>
+          <option>หอพัก ทวีชัย</option>
+        </select> 
+    </br>
+        
+        <select class="form-control form-control-lg">
+          <option>มกราคม</option>
+          <option>กุมภาพันธ์</option>
+          <option>มีนาคม</option>
+          <option>เมษายน</option>
+          <option>พฤษภาคม</option>
+          <option>มิถุนายน</option>
+          <option>กรกฎาคม</option>
+          <option>สิงหาคม</option>
+          <option>กันยายน</option>
+          <option>ตุลาคม</option>
+          <option>พฤศจิกายน</option>
+          <option>ธันวาคม</option>
+        </select>
+      </br>
+      <div class='input-group date' id='datetimepicker1'>
+        <input type='text' class="form-control" />
+        <span class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar"></span>
+        </span>
+      </br>
+
+       </div>
+     </div>
+    </div>
+    </div>
+    <div class="container1">
+    <button type="submit" class="btn btn-default">Submit</button>
+    <div class="root">ผลลัพธ์คือ 30c</div>
+ </div>
+</div>
+</div>
+</div>
+
+
+<footer>UBUstudent@ubu.ac.th </footer>
+
+
+</body>
+</html>
