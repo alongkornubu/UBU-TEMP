@@ -6,36 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UBU-TEMP</title>
   <link rel="stylesheet" href="coco.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <style>
     *{
-      font-family: 'RocknRoll One', sans-serif;
+      font-family: 'RocknRoll One', sans-serif;      
     }
   .container {
     margin-top: 200px;
-    margin-left: 570px
+    text-align: center;
   }
   .container1 {
     margin-top: 0px;
-    margin-left: 730px
+    text-align: center;
   }
   footer{
     text-align: center;
-    margin-top:11rem;
+    margin-top:11.8rem;
   }
   body{
-    background-color: rgb(235, 175, 175);
+    background-color: rgb(248, 153, 153);
   }
   .container2 {
-    margin-top: 5px;
+    text-align: center;
     margin-left: 0px
   }
   .Main-topic{
@@ -48,6 +48,15 @@
   h1{
     font-size: 24px;
   }
+
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+ 
   </style>
   <script src="jed.js"></script>
 </head>
@@ -55,58 +64,50 @@
 
 
 <body >
-  <nav class="navbar is-danger
- " role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      
-  
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          UBU-TEMP
-        </a>
-    </div>
-    <div class="navbar-end">
-      <div class="navbar-item">
-        Taweechai : {online}
-      </div>
-      <div class="navbar-item">
-       AA : {offline}
-      </div>
-      <div class="navbar-item">
-       Kanokwan1 : {online}
-      </div>
-      <div class="navbar-item">
-        Kanokwan2 : {offline}
-      </div>
-    </div>
-  
-      </div>
-  
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-
-          </div>
-        </div>
-      </div>
-    </div>
+  <nav class="navbar navbar-dark bg-danger">
+    <span class="navbar-brand mb-0 h1">UBU-TEMP</span>
   </nav>
   
+  <!--Status-->
+  <div class="jumbotron">
+    <div class="row w-100">
+            <div class="col-md-3">
+                <div class="card border-info mx-sm-1 p-3">
+                    <!-- <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-car" aria-hidden="true"></span></div> -->
+                    <div class="text-info text-center mt-3"><h4>Taweechai</h4></div>
+                    <div class="text-info text-center mt-2"><h1>Online</h1></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-success mx-sm-1 p-3">
+                    <!-- <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-eye" aria-hidden="true"></span></div> -->
+                    <div class="text-success text-center mt-3"><h4>AA</h4></div>
+                    <div class="text-success text-center mt-2"><h1>Offline</h1></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-danger mx-sm-1 p-3">
+                    <!-- <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-heart" aria-hidden="true"></span></div> -->
+                    <div class="text-danger text-center mt-3"><h4> Kanokwan1</h4></div>
+                    <div class="text-danger text-center mt-2"><h1>Online</h1></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-warning mx-sm-1 p-3">
+                    <!-- <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span></div> -->
+                    <div class="text-warning text-center mt-3"><h4> Kanokwan2</h4></div> 
+                   
+                    <div class="text-warning text-center mt-2"><h1>Offline</h1></div>
+                </div>
+            </div>
+         </div>
   </div>
 
     <div class="container">
       <div class="form-group row">
-      <div class="col-sm-5">
+      <div class="col-sm-12">
         <h1 class="Main-topic">คาดการณ์</h1>
-        <select class="form-control form-control-lg">
+        <select class="form-control form-control-lg" >
           <option>หอพัก กนกวรรณ</option>
           <option>หอพัก AA</option>
           <option>หอพัก ทวีชัย</option>
@@ -128,13 +129,19 @@
           <option>ธันวาคม</option>
         </select>
       </br>
-      <div class='input-group date' id='datetimepicker1'>
+
+<!--Time picker -->
+<div>
+  <input type="number" min="0" max="23" placeholder="23">:
+  <input type="number" min="0" max="59" placeholder="00">
+</div>
+
+      <!-- <div class='input-group date' id='datetimepicker1'>
         <input type='text' class="form-control" />
         <span class="input-group-addon">
           <span class="glyphicon glyphicon-calendar"></span>
-        </span>
+        </span> -->
       </br>
-
        </div>
      </div>
     </div>
@@ -150,6 +157,7 @@
 
 <footer>UBUstudent@ubu.ac.th </footer>
 
-
 </body>
+
+
 </html>
